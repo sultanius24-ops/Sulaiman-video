@@ -12,12 +12,13 @@
     "@fontsource/plus-jakarta-sans": "^5.3.0",
     "@remotion/cli": "^4.0.355",
     "@remotion/fonts": "^4.0.355",
+    "lucide-react": "^1.50.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "remotion": "^4.0.355"
   },
   "devDependencies": {
     "@types/react": "^19.3.0",
-    "typescript": "^7.0.2"
+    "typescript": "5.9"
   }
 }
