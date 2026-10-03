@@ -1,0 +1,864 @@
+{
+ "fps": 30,
+ "total": 54.5,
+ "scenes": [
+  {
+   "id": "intro",
+   "start": 0,
+   "end": 9.0
+  },
+  {
+   "id": "interp",
+   "start": 9.0,
+   "end": 17.2
+  },
+  {
+   "id": "binary",
+   "start": 17.2,
+   "end": 24.3
+  },
+  {
+   "id": "ram",
+   "start": 24.3,
+   "end": 32.1
+  },
+  {
+   "id": "cpu",
+   "start": 32.1,
+   "end": 41.0
+  },
+  {
+   "id": "output",
+   "start": 41.0,
+   "end": 44.4
+  },
+  {
+   "id": "summary",
+   "start": 44.4,
+   "end": 54.5
+  }
+ ],
+ "cues": {
+  "typeStart": 4.341,
+  "behind": 7.57,
+  "interpreter": 12.364,
+  "instructions": 14.79,
+  "dontSpeak": 19.12,
+  "zeros": 22.478,
+  "binaryWord": 23.497,
+  "loaded": 26.563,
+  "memory": 28.639,
+  "cpuTease": 30.348,
+  "fetch": 34.665,
+  "decode": 36.974,
+  "execute": 39.882,
+  "hello": 42.489,
+  "sumCode": 44.907,
+  "sumInterp": 45.312,
+  "sumBinary": 46.284,
+  "sumRam": 46.851,
+  "sumCpu": 47.175,
+  "sumOutput": 48.633,
+  "fraction": 50.532
+ },
+ "words": [
+  {
+   "w": "Ever",
+   "s": 0.45,
+   "e": 0.709,
+   "scene": "intro"
+  },
+  {
+   "w": "wondered",
+   "s": 0.709,
+   "e": 1.156,
+   "scene": "intro"
+  },
+  {
+   "w": "what",
+   "s": 1.156,
+   "e": 1.415,
+   "scene": "intro"
+  },
+  {
+   "w": "actually",
+   "s": 1.415,
+   "e": 1.862,
+   "scene": "intro"
+  },
+  {
+   "w": "happens",
+   "s": 1.862,
+   "e": 2.262,
+   "scene": "intro"
+  },
+  {
+   "w": "after",
+   "s": 2.262,
+   "e": 2.568,
+   "scene": "intro"
+  },
+  {
+   "w": "you",
+   "s": 2.568,
+   "e": 2.779,
+   "scene": "intro"
+  },
+  {
+   "w": "write",
+   "s": 2.779,
+   "e": 3.085,
+   "scene": "intro"
+  },
+  {
+   "w": "code?",
+   "s": 3.085,
+   "e": 3.344,
+   "scene": "intro"
+  },
+  {
+   "w": "Say",
+   "s": 3.694,
+   "e": 3.943,
+   "scene": "intro"
+  },
+  {
+   "w": "you",
+   "s": 3.943,
+   "e": 4.191,
+   "scene": "intro"
+  },
+  {
+   "w": "type",
+   "s": 4.191,
+   "e": 4.495,
+   "scene": "intro"
+  },
+  {
+   "w": "print,",
+   "s": 4.495,
+   "e": 4.855,
+   "scene": "intro"
+  },
+  {
+   "w": "hello.",
+   "s": 4.855,
+   "e": 5.221,
+   "scene": "intro"
+  },
+  {
+   "w": "Simple,",
+   "s": 5.221,
+   "e": 5.649,
+   "scene": "intro"
+  },
+  {
+   "w": "right?",
+   "s": 5.649,
+   "e": 6.015,
+   "scene": "intro"
+  },
+  {
+   "w": "Well...",
+   "s": 6.015,
+   "e": 6.443,
+   "scene": "intro"
+  },
+  {
+   "w": "a",
+   "s": 6.443,
+   "e": 6.58,
+   "scene": "intro"
+  },
+  {
+   "w": "lot",
+   "s": 6.58,
+   "e": 6.828,
+   "scene": "intro"
+  },
+  {
+   "w": "is",
+   "s": 6.828,
+   "e": 7.02,
+   "scene": "intro"
+  },
+  {
+   "w": "going",
+   "s": 7.02,
+   "e": 7.378,
+   "scene": "intro"
+  },
+  {
+   "w": "on",
+   "s": 7.378,
+   "e": 7.57,
+   "scene": "intro"
+  },
+  {
+   "w": "behind",
+   "s": 7.57,
+   "e": 7.982,
+   "scene": "intro"
+  },
+  {
+   "w": "the",
+   "s": 7.982,
+   "e": 8.23,
+   "scene": "intro"
+  },
+  {
+   "w": "scenes.",
+   "s": 8.23,
+   "e": 8.642,
+   "scene": "intro"
+  },
+  {
+   "w": "First,",
+   "s": 9.242,
+   "e": 9.662,
+   "scene": "interp"
+  },
+  {
+   "w": "your",
+   "s": 9.822,
+   "e": 10.089,
+   "scene": "interp"
+  },
+  {
+   "w": "code",
+   "s": 10.089,
+   "e": 10.356,
+   "scene": "interp"
+  },
+  {
+   "w": "needs",
+   "s": 10.356,
+   "e": 10.671,
+   "scene": "interp"
+  },
+  {
+   "w": "to",
+   "s": 10.671,
+   "e": 10.841,
+   "scene": "interp"
+  },
+  {
+   "w": "be",
+   "s": 10.841,
+   "e": 11.01,
+   "scene": "interp"
+  },
+  {
+   "w": "translated.",
+   "s": 11.01,
+   "e": 11.568,
+   "scene": "interp"
+  },
+  {
+   "w": "The",
+   "s": 11.818,
+   "e": 12.023,
+   "scene": "interp"
+  },
+  {
+   "w": "Python",
+   "s": 12.023,
+   "e": 12.364,
+   "scene": "interp"
+  },
+  {
+   "w": "interpreter",
+   "s": 12.364,
+   "e": 12.933,
+   "scene": "interp"
+  },
+  {
+   "w": "reads",
+   "s": 12.933,
+   "e": 13.229,
+   "scene": "interp"
+  },
+  {
+   "w": "it,",
+   "s": 13.229,
+   "e": 13.388,
+   "scene": "interp"
+  },
+  {
+   "w": "and",
+   "s": 13.858,
+   "e": 14.068,
+   "scene": "interp"
+  },
+  {
+   "w": "turns",
+   "s": 14.068,
+   "e": 14.371,
+   "scene": "interp"
+  },
+  {
+   "w": "it",
+   "s": 14.371,
+   "e": 14.534,
+   "scene": "interp"
+  },
+  {
+   "w": "into",
+   "s": 14.534,
+   "e": 14.79,
+   "scene": "interp"
+  },
+  {
+   "w": "instructions",
+   "s": 14.79,
+   "e": 15.42,
+   "scene": "interp"
+  },
+  {
+   "w": "your",
+   "s": 15.42,
+   "e": 15.676,
+   "scene": "interp"
+  },
+  {
+   "w": "computer",
+   "s": 15.676,
+   "e": 16.119,
+   "scene": "interp"
+  },
+  {
+   "w": "can",
+   "s": 16.119,
+   "e": 16.329,
+   "scene": "interp"
+  },
+  {
+   "w": "understand.",
+   "s": 16.329,
+   "e": 16.865,
+   "scene": "interp"
+  },
+  {
+   "w": "But",
+   "s": 17.465,
+   "e": 17.629,
+   "scene": "binary"
+  },
+  {
+   "w": "here's",
+   "s": 17.629,
+   "e": 17.865,
+   "scene": "binary"
+  },
+  {
+   "w": "the",
+   "s": 17.865,
+   "e": 18.029,
+   "scene": "binary"
+  },
+  {
+   "w": "thing.",
+   "s": 18.029,
+   "e": 18.265,
+   "scene": "binary"
+  },
+  {
+   "w": "Computers",
+   "s": 18.555,
+   "e": 19.12,
+   "scene": "binary"
+  },
+  {
+   "w": "don't",
+   "s": 19.12,
+   "e": 19.416,
+   "scene": "binary"
+  },
+  {
+   "w": "speak",
+   "s": 19.416,
+   "e": 19.765,
+   "scene": "binary"
+  },
+  {
+   "w": "Python.",
+   "s": 19.765,
+   "e": 20.169,
+   "scene": "binary"
+  },
+  {
+   "w": "Deep",
+   "s": 20.419,
+   "e": 20.754,
+   "scene": "binary"
+  },
+  {
+   "w": "down,",
+   "s": 20.754,
+   "e": 21.088,
+   "scene": "binary"
+  },
+  {
+   "w": "they",
+   "s": 21.088,
+   "e": 21.428,
+   "scene": "binary"
+  },
+  {
+   "w": "only",
+   "s": 21.428,
+   "e": 21.767,
+   "scene": "binary"
+  },
+  {
+   "w": "understand",
+   "s": 21.767,
+   "e": 22.478,
+   "scene": "binary"
+  },
+  {
+   "w": "zeros",
+   "s": 22.478,
+   "e": 22.879,
+   "scene": "binary"
+  },
+  {
+   "w": "and",
+   "s": 22.879,
+   "e": 23.157,
+   "scene": "binary"
+  },
+  {
+   "w": "ones.",
+   "s": 23.157,
+   "e": 23.497,
+   "scene": "binary"
+  },
+  {
+   "w": "Binary.",
+   "s": 23.497,
+   "e": 23.965,
+   "scene": "binary"
+  },
+  {
+   "w": "Those",
+   "s": 24.565,
+   "e": 24.971,
+   "scene": "ram"
+  },
+  {
+   "w": "binary",
+   "s": 24.971,
+   "e": 25.439,
+   "scene": "ram"
+  },
+  {
+   "w": "instructions",
+   "s": 25.439,
+   "e": 26.282,
+   "scene": "ram"
+  },
+  {
+   "w": "are",
+   "s": 26.282,
+   "e": 26.563,
+   "scene": "ram"
+  },
+  {
+   "w": "loaded",
+   "s": 26.563,
+   "e": 27.032,
+   "scene": "ram"
+  },
+  {
+   "w": "into",
+   "s": 27.032,
+   "e": 27.375,
+   "scene": "ram"
+  },
+  {
+   "w": "RAM,",
+   "s": 27.375,
+   "e": 27.656,
+   "scene": "ram"
+  },
+  {
+   "w": "your",
+   "s": 27.806,
+   "e": 28.092,
+   "scene": "ram"
+  },
+  {
+   "w": "computer's",
+   "s": 28.092,
+   "e": 28.639,
+   "scene": "ram"
+  },
+  {
+   "w": "short-term",
+   "s": 28.639,
+   "e": 29.186,
+   "scene": "ram"
+  },
+  {
+   "w": "memory,",
+   "s": 29.186,
+   "e": 29.576,
+   "scene": "ram"
+  },
+  {
+   "w": "so",
+   "s": 29.896,
+   "e": 30.094,
+   "scene": "ram"
+  },
+  {
+   "w": "the",
+   "s": 30.094,
+   "e": 30.348,
+   "scene": "ram"
+  },
+  {
+   "w": "CPU",
+   "s": 30.348,
+   "e": 30.602,
+   "scene": "ram"
+  },
+  {
+   "w": "can",
+   "s": 30.602,
+   "e": 30.856,
+   "scene": "ram"
+  },
+  {
+   "w": "grab",
+   "s": 30.856,
+   "e": 31.166,
+   "scene": "ram"
+  },
+  {
+   "w": "them",
+   "s": 31.166,
+   "e": 31.477,
+   "scene": "ram"
+  },
+  {
+   "w": "fast.",
+   "s": 31.477,
+   "e": 31.787,
+   "scene": "ram"
+  },
+  {
+   "w": "Now",
+   "s": 32.387,
+   "e": 32.673,
+   "scene": "cpu"
+  },
+  {
+   "w": "the",
+   "s": 32.673,
+   "e": 32.959,
+   "scene": "cpu"
+  },
+  {
+   "w": "CPU",
+   "s": 32.959,
+   "e": 33.245,
+   "scene": "cpu"
+  },
+  {
+   "w": "gets",
+   "s": 33.245,
+   "e": 33.595,
+   "scene": "cpu"
+  },
+  {
+   "w": "to",
+   "s": 33.595,
+   "e": 33.817,
+   "scene": "cpu"
+  },
+  {
+   "w": "work.",
+   "s": 33.817,
+   "e": 34.167,
+   "scene": "cpu"
+  },
+  {
+   "w": "It",
+   "s": 34.467,
+   "e": 34.665,
+   "scene": "cpu"
+  },
+  {
+   "w": "fetches",
+   "s": 34.665,
+   "e": 35.146,
+   "scene": "cpu"
+  },
+  {
+   "w": "the",
+   "s": 35.146,
+   "e": 35.401,
+   "scene": "cpu"
+  },
+  {
+   "w": "instruction",
+   "s": 35.401,
+   "e": 36.108,
+   "scene": "cpu"
+  },
+  {
+   "w": "from",
+   "s": 36.108,
+   "e": 36.419,
+   "scene": "cpu"
+  },
+  {
+   "w": "RAM...",
+   "s": 36.419,
+   "e": 36.674,
+   "scene": "cpu"
+  },
+  {
+   "w": "decodes",
+   "s": 36.974,
+   "e": 37.378,
+   "scene": "cpu"
+  },
+  {
+   "w": "it,",
+   "s": 37.378,
+   "e": 37.544,
+   "scene": "cpu"
+  },
+  {
+   "w": "to",
+   "s": 37.704,
+   "e": 37.852,
+   "scene": "cpu"
+  },
+  {
+   "w": "figure",
+   "s": 37.852,
+   "e": 38.168,
+   "scene": "cpu"
+  },
+  {
+   "w": "out",
+   "s": 38.168,
+   "e": 38.358,
+   "scene": "cpu"
+  },
+  {
+   "w": "what",
+   "s": 38.358,
+   "e": 38.59,
+   "scene": "cpu"
+  },
+  {
+   "w": "it",
+   "s": 38.59,
+   "e": 38.738,
+   "scene": "cpu"
+  },
+  {
+   "w": "means...",
+   "s": 38.738,
+   "e": 39.012,
+   "scene": "cpu"
+  },
+  {
+   "w": "and",
+   "s": 39.312,
+   "e": 39.519,
+   "scene": "cpu"
+  },
+  {
+   "w": "then,",
+   "s": 39.519,
+   "e": 39.772,
+   "scene": "cpu"
+  },
+  {
+   "w": "executes",
+   "s": 39.882,
+   "e": 40.479,
+   "scene": "cpu"
+  },
+  {
+   "w": "it.",
+   "s": 40.479,
+   "e": 40.699,
+   "scene": "cpu"
+  },
+  {
+   "w": "And",
+   "s": 41.299,
+   "e": 41.488,
+   "scene": "output"
+  },
+  {
+   "w": "just",
+   "s": 41.488,
+   "e": 41.718,
+   "scene": "output"
+  },
+  {
+   "w": "like",
+   "s": 41.718,
+   "e": 41.949,
+   "scene": "output"
+  },
+  {
+   "w": "that...",
+   "s": 41.949,
+   "e": 42.179,
+   "scene": "output"
+  },
+  {
+   "w": "hello",
+   "s": 42.489,
+   "e": 42.793,
+   "scene": "output"
+  },
+  {
+   "w": "appears",
+   "s": 42.793,
+   "e": 43.191,
+   "scene": "output"
+  },
+  {
+   "w": "on",
+   "s": 43.191,
+   "e": 43.355,
+   "scene": "output"
+  },
+  {
+   "w": "your",
+   "s": 43.355,
+   "e": 43.613,
+   "scene": "output"
+  },
+  {
+   "w": "screen.",
+   "s": 43.613,
+   "e": 43.964,
+   "scene": "output"
+  },
+  {
+   "w": "So:",
+   "s": 44.664,
+   "e": 44.907,
+   "scene": "summary"
+  },
+  {
+   "w": "code,",
+   "s": 44.907,
+   "e": 45.312,
+   "scene": "summary"
+  },
+  {
+   "w": "interpreter,",
+   "s": 45.312,
+   "e": 46.284,
+   "scene": "summary"
+  },
+  {
+   "w": "binary,",
+   "s": 46.284,
+   "e": 46.851,
+   "scene": "summary"
+  },
+  {
+   "w": "RAM,",
+   "s": 46.851,
+   "e": 47.175,
+   "scene": "summary"
+  },
+  {
+   "w": "CPU...",
+   "s": 47.175,
+   "e": 47.661,
+   "scene": "summary"
+  },
+  {
+   "w": "and",
+   "s": 47.661,
+   "e": 47.997,
+   "scene": "summary"
+  },
+  {
+   "w": "finally,",
+   "s": 47.997,
+   "e": 48.633,
+   "scene": "summary"
+  },
+  {
+   "w": "output.",
+   "s": 48.633,
+   "e": 49.2,
+   "scene": "summary"
+  },
+  {
+   "w": "All",
+   "s": 49.55,
+   "e": 49.717,
+   "scene": "summary"
+  },
+  {
+   "w": "of",
+   "s": 49.717,
+   "e": 49.846,
+   "scene": "summary"
+  },
+  {
+   "w": "that,",
+   "s": 49.846,
+   "e": 50.05,
+   "scene": "summary"
+  },
+  {
+   "w": "in",
+   "s": 50.24,
+   "e": 50.41,
+   "scene": "summary"
+  },
+  {
+   "w": "a",
+   "s": 50.41,
+   "e": 50.532,
+   "scene": "summary"
+  },
+  {
+   "w": "tiny",
+   "s": 50.532,
+   "e": 50.8,
+   "scene": "summary"
+  },
+  {
+   "w": "fraction",
+   "s": 50.8,
+   "e": 51.262,
+   "scene": "summary"
+  },
+  {
+   "w": "of",
+   "s": 51.262,
+   "e": 51.432,
+   "scene": "summary"
+  },
+  {
+   "w": "a",
+   "s": 51.432,
+   "e": 51.554,
+   "scene": "summary"
+  },
+  {
+   "w": "second.",
+   "s": 51.554,
+   "e": 51.919,
+   "scene": "summary"
+  }
+ ]
+}
