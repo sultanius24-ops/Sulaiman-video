@@ -4,3 +4,5 @@ out/
 audio-pipeline/models/
 audio-pipeline/*.wav
 audio-pipeline/*.json
+audio-pipeline/arabic/models/
+audio-pipeline/arabic/build/

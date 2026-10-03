@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "studio": "remotion studio",
-    "render": "remotion render CodeToOutput out/code-to-output.mp4"
+    "render": "remotion render CodeToOutput out/code-to-output.mp4",
+    "render:arabic": "remotion render ArabicStory out/juliane-story-arabic.mp4"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",
