@@ -5,9 +5,12 @@
   "scripts": {
     "studio": "remotion studio",
     "render": "remotion render CodeToOutput out/code-to-output.mp4",
-    "render:arabic": "remotion render ArabicStory out/juliane-story-arabic.mp4"
+    "render:arabic": "remotion render ArabicStory out/juliane-story-arabic.mp4",
+    "render:nino-en": "remotion render NinoEnglish out/el-nino-english.mp4",
+    "render:nino-ar": "remotion render NinoArabic out/el-nino-arabic.mp4"
   },
   "dependencies": {
+    "@fontsource/cairo": "^5.3.0",
     "@fontsource/inter": "^5.3.0",
     "@fontsource/jetbrains-mono": "^5.3.0",
     "@fontsource/plus-jakarta-sans": "^5.3.0",

@@ -64,3 +64,26 @@ cd ..
 ```
 
 Other Arabic voices that work the same way are `vits-piper-ar_JO-SA_dii-high` (female), `vits-piper-ar_JO-SA_miro-high` and `vits-piper-ar_JO-kareem-medium` (male). Pass the folder name to `ar_vo.py`.
+
+---
+
+# El Niño preparedness — English & Arabic motion graphics
+
+`NinoEnglish` and `NinoArabic` compositions turn the Mitz El Niño carousel (10 slides) into two vertical videos with narration, sound effects and music. Both versions share the same scenes (`src/nino/`). Each language has its own timeline (`src/nino/timeline.{en,ar}.json`), so every checklist row, callout ring and effect lands on the word that introduces it. The Arabic version runs right-to-left in the Cairo font.
+
+- Artwork: the original illustrations extracted from the PDF (`public/nino/art/`), animated with a slow push-in, rain, wind, lightning and storm overlays, plus pulsing callouts on the relevant spot.
+- Voices: English `af_heart` (Kokoro), Arabic `ar_JO-SA_miro_V2-high` (Piper/sherpa-onnx, fully diacritized script).
+- Content (both languages, on-screen labels and narration) lives in `audio-pipeline/nino/spec.py`.
+
+```bash
+npm run render:nino-en
+npm run render:nino-ar
+```
+
+Regenerate narration/timings and the soundtrack after editing `spec.py` (models as in the sections above, in one folder):
+
+```bash
+cd audio-pipeline/nino
+python voice.py en /path/to/models && python mix.py en
+python voice.py ar /path/to/models && python mix.py ar
+```

@@ -1,0 +1,759 @@
+{
+ "lang": "en",
+ "fps": 30,
+ "total": 156.01,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0.05,
+   "cues": {
+    "title": 0.6,
+    "dates": 3.154,
+    "storm": 7.798,
+    "steps": 8.942
+   },
+   "end": 11.46
+  },
+  {
+   "id": "why",
+   "start": 11.46,
+   "cues": {
+    "title": 12.01,
+    "peak": 13.306,
+    "b0": 17.779,
+    "b1": 18.415,
+    "b2": 19.051,
+    "b3": 19.919,
+    "warn": 20.324,
+    "prepare": 22.207
+   },
+   "end": 26.545
+  },
+  {
+   "id": "carport",
+   "start": 26.545,
+   "cues": {
+    "title": 27.095,
+    "wind": 29.047,
+    "b0": 32.865,
+    "b1": 35.607,
+    "b2": 37.403
+   },
+   "end": 42.985
+  },
+  {
+   "id": "garden",
+   "start": 42.985,
+   "cues": {
+    "title": 43.535,
+    "b0": 45.481,
+    "b1": 47.811,
+    "b2": 51.107,
+    "danger": 53.507
+   },
+   "end": 56.974
+  },
+  {
+   "id": "water",
+   "start": 56.974,
+   "cues": {
+    "title": 57.524,
+    "leak": 59.489,
+    "b0": 62.37,
+    "b1": 67.246,
+    "b2": 69.507
+   },
+   "end": 73.633
+  },
+  {
+   "id": "parking",
+   "start": 73.633,
+   "cues": {
+    "title": 74.183,
+    "b0": 76.61,
+    "b1": 82.369,
+    "b2": 82.749,
+    "b3": 85.98
+   },
+   "end": 90.85
+  },
+  {
+   "id": "updates",
+   "start": 90.85,
+   "cues": {
+    "title": 91.4,
+    "b0": 95.311,
+    "b1": 99.014,
+    "flip": 101.362,
+    "b2": 105.512,
+    "life": 109.078
+   },
+   "end": 111.07
+  },
+  {
+   "id": "wadi",
+   "start": 111.07,
+   "cues": {
+    "kick": 111.62,
+    "title": 114.04,
+    "shallow": 115.943,
+    "stat": 117.804,
+    "wait": 122.001
+   },
+   "end": 127.2
+  },
+  {
+   "id": "bag",
+   "start": 127.2,
+   "cues": {
+    "title": 127.75,
+    "b0": 130.318,
+    "b1": 131.186,
+    "b2": 131.928,
+    "b3": 132.98,
+    "b4": 133.547,
+    "b5": 135.473,
+    "b6": 136.237,
+    "b7": 139.966,
+    "b8": 141.782
+   },
+   "end": 142.838
+  },
+  {
+   "id": "outro",
+   "start": 142.838,
+   "cues": {
+    "title": 143.388,
+    "save": 146.117,
+    "share": 147.096,
+    "sos": 148.92
+   },
+   "end": 156.01
+  }
+ ],
+ "content": [
+  {
+   "id": "hook",
+   "art": 1,
+   "kicker": "El Niño 2026–27",
+   "title": "El Niño is coming.",
+   "sub": "Is your home ready?",
+   "chip": "Late Oct 2026  →  May 2027",
+   "fx": [
+    "sun",
+    "cloudIn",
+    "rainLate"
+   ],
+   "spots": {
+    "storm": [
+     0.78,
+     0.18
+    ]
+   }
+  },
+  {
+   "id": "why",
+   "art": 2,
+   "kicker": "Why should we care?",
+   "title": "Expect the unexpected",
+   "bullets": [
+    {
+     "icon": "ThermometerSun",
+     "en": "Heat waves",
+     "ar": "موجات حر",
+     "at": "b0",
+     "color": "#E8743B"
+    },
+    {
+     "icon": "SunDim",
+     "en": "Dry spells",
+     "ar": "جفاف",
+     "at": "b1",
+     "color": "#D9A33A"
+    },
+    {
+     "icon": "CloudRain",
+     "en": "Heavy rain",
+     "ar": "أمطار غزيرة",
+     "at": "b2",
+     "color": "#4A86C5"
+    },
+    {
+     "icon": "Waves",
+     "en": "Floods",
+     "ar": "سيول",
+     "at": "b3",
+     "color": "#2F6FA8"
+    }
+   ],
+   "warn": "Often with little warning"
+  },
+  {
+   "id": "carport",
+   "art": 3,
+   "tip": 1,
+   "title": "Check your carport",
+   "bullets": [
+    {
+     "icon": "ScanSearch",
+     "en": "Inspect metal, fabric & bolts",
+     "ar": "افحص الحديد والقماش والبراغي",
+     "at": "b0",
+     "spot": [
+      0.8,
+      0.15
+     ]
+    },
+    {
+     "icon": "Wrench",
+     "en": "Damaged? Fix it now",
+     "ar": "فيها خلل؟ صلّحها الحين",
+     "at": "b1",
+     "spot": [
+      0.57,
+      0.7
+     ]
+    },
+    {
+     "icon": "ShieldCheck",
+     "en": "Weld supports & tighten bolts",
+     "ar": "قوّها بدعامات وشدّ البراغي",
+     "at": "b2",
+     "spot": [
+      0.55,
+      0.92
+     ]
+    }
+   ],
+   "fx": [
+    "wind"
+   ]
+  },
+  {
+   "id": "garden",
+   "art": 4,
+   "tip": 2,
+   "title": "Secure your garden",
+   "bullets": [
+    {
+     "icon": "Scissors",
+     "en": "Trim trees & heavy branches",
+     "ar": "قلّم الأشجار والأغصان الثقيلة",
+     "at": "b0",
+     "spot": [
+      0.8,
+      0.22
+     ]
+    },
+    {
+     "icon": "Sprout",
+     "en": "Bring down hanging pots",
+     "ar": "نزّل أحواض الزرع المعلّقة",
+     "at": "b1",
+     "spot": [
+      0.12,
+      0.76
+     ]
+    },
+    {
+     "icon": "Wind",
+     "en": "Clear anything loose",
+     "ar": "شيل أي أغراض تطيّرها الرياح",
+     "at": "b2",
+     "spot": [
+      0.18,
+      0.28
+     ]
+    }
+   ],
+   "fx": [
+    "wind"
+   ]
+  },
+  {
+   "id": "water",
+   "art": 5,
+   "tip": 3,
+   "title": "Keep the water out",
+   "bullets": [
+    {
+     "icon": "PaintBucket",
+     "en": "Seal windows with silicone",
+     "ar": "اعزل النوافذ بالسيليكون",
+     "at": "b0",
+     "spot": [
+      0.2,
+      0.68
+     ]
+    },
+    {
+     "icon": "DoorClosed",
+     "en": "Rubber seals on main doors",
+     "ar": "ركّب عوازل مطاطية للأبواب",
+     "at": "b1",
+     "spot": [
+      0.78,
+      0.83
+     ]
+    },
+    {
+     "icon": "Droplets",
+     "en": "Bonus: clear roof drains",
+     "ar": "نصيحة: نظّف تصريف السطح",
+     "at": "b2",
+     "bonus": true
+    }
+   ],
+   "fx": [
+    "rainWindow"
+   ]
+  },
+  {
+   "id": "parking",
+   "art": 6,
+   "tip": 4,
+   "title": "Park smart",
+   "bullets": [
+    {
+     "icon": "Waves",
+     "en": "Away from wadi channels",
+     "ar": "بعيد عن مجاري الأودية",
+     "at": "b0",
+     "spot": [
+      0.22,
+      0.86
+     ],
+     "bad": true
+    },
+    {
+     "icon": "Trees",
+     "en": "Away from big trees",
+     "ar": "بعيد عن الأشجار الكبيرة",
+     "at": "b1",
+     "spot": [
+      0.4,
+      0.3
+     ],
+     "bad": true
+    },
+    {
+     "icon": "UtilityPole",
+     "en": "Away from power lines & streetlights",
+     "ar": "بعيد عن أعمدة وأسلاك الكهرباء",
+     "at": "b2",
+     "spot": [
+      0.17,
+      0.3
+     ],
+     "bad": true
+    },
+    {
+     "icon": "SquareParking",
+     "en": "Use mall or public parking",
+     "ar": "استخدم مواقف المولات أو العامة",
+     "at": "b3",
+     "spot": [
+      0.78,
+      0.62
+     ],
+     "good": true
+    }
+   ],
+   "fx": [
+    "rainLeft"
+   ]
+  },
+  {
+   "id": "updates",
+   "art": 7,
+   "tip": 5,
+   "title": "Stay updated",
+   "sub": "Never underestimate the weather",
+   "bullets": [
+    {
+     "icon": "Smartphone",
+     "en": "Follow official weather updates",
+     "ar": "تابع نشرات الطقس الرسمية",
+     "at": "b0",
+     "spot": [
+      0.32,
+      0.62
+     ]
+    },
+    {
+     "icon": "Clock3",
+     "en": "Sunny now, flooding by 3 PM",
+     "ar": "مشمس الحين.. وسيول الساعة 3 العصر",
+     "at": "b1",
+     "spot": [
+      0.2,
+      0.24
+     ]
+    },
+    {
+     "icon": "Umbrella",
+     "en": "Stay in & keep kids out of the rain",
+     "ar": "لا تطلع ولا تخلّي عيالك تحت المطر",
+     "at": "b2",
+     "spot": [
+      0.74,
+      0.66
+     ]
+    }
+   ],
+   "quote": "No trip is worth your life.",
+   "fx": [
+    "sunToStorm"
+   ]
+  },
+  {
+   "id": "wadi",
+   "art": 8,
+   "tip": 6,
+   "title": "Never cross a flowing wadi",
+   "kick": "Caught in the rain while driving?",
+   "stat": "30 cm",
+   "statText": "of fast-moving water can sweep a car away",
+   "waitText": "Wait it out. A life can't be replaced.",
+   "spots": {
+    "stat": [
+     0.3,
+     0.86
+    ]
+   },
+   "fx": [
+    "rain",
+    "lightning"
+   ]
+  },
+  {
+   "id": "bag",
+   "art": 9,
+   "tip": 7,
+   "title": "Pack a “just in case” bag",
+   "bullets": [
+    {
+     "icon": "Flashlight",
+     "en": "Flashlight",
+     "ar": "كشاف",
+     "at": "b0",
+     "spot": [
+      0.15,
+      0.08
+     ]
+    },
+    {
+     "icon": "BatteryCharging",
+     "en": "Power bank",
+     "ar": "باور بانك",
+     "at": "b1",
+     "spot": [
+      0.19,
+      0.3
+     ]
+    },
+    {
+     "icon": "GlassWater",
+     "en": "Drinking water",
+     "ar": "ماء شرب",
+     "at": "b2",
+     "spot": [
+      0.21,
+      0.62
+     ]
+    },
+    {
+     "icon": "Cookie",
+     "en": "Snacks",
+     "ar": "وجبات خفيفة",
+     "at": "b3",
+     "spot": [
+      0.06,
+      0.66
+     ]
+    },
+    {
+     "icon": "BriefcaseMedical",
+     "en": "First aid kit",
+     "ar": "إسعافات أولية",
+     "at": "b4",
+     "spot": [
+      0.83,
+      0.44
+     ]
+    },
+    {
+     "icon": "Pill",
+     "en": "Medicines",
+     "ar": "أدويتك",
+     "at": "b5",
+     "spot": [
+      0.83,
+      0.75
+     ]
+    },
+    {
+     "icon": "IdCard",
+     "en": "IDs & papers",
+     "ar": "الأوراق المهمة",
+     "at": "b6",
+     "spot": [
+      0.82,
+      0.12
+     ]
+    },
+    {
+     "icon": "Smartphone",
+     "en": "Phone charged",
+     "ar": "جوال مشحون",
+     "at": "b7"
+    },
+    {
+     "icon": "Fuel",
+     "en": "Car fueled",
+     "ar": "بترول في السيارة",
+     "at": "b8"
+    }
+   ]
+  },
+  {
+   "id": "outro",
+   "art": 10,
+   "title": "Prepare today,",
+   "sub": "so you don't regret tomorrow.",
+   "save": "Save",
+   "share": "Share",
+   "sos": "Emergency in Oman",
+   "fx": [
+    "rainSoft"
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "scene": "hook",
+   "start": 0.6,
+   "end": 2.774
+  },
+  {
+   "scene": "hook",
+   "start": 3.154,
+   "end": 8.562
+  },
+  {
+   "scene": "hook",
+   "start": 8.942,
+   "end": 11.01
+  },
+  {
+   "scene": "why",
+   "start": 12.01,
+   "end": 12.926
+  },
+  {
+   "scene": "why",
+   "start": 13.306,
+   "end": 16.184
+  },
+  {
+   "scene": "why",
+   "start": 16.564,
+   "end": 21.827
+  },
+  {
+   "scene": "why",
+   "start": 22.207,
+   "end": 26.095
+  },
+  {
+   "scene": "carport",
+   "start": 27.095,
+   "end": 28.667
+  },
+  {
+   "scene": "carport",
+   "start": 29.047,
+   "end": 32.485
+  },
+  {
+   "scene": "carport",
+   "start": 32.865,
+   "end": 35.227
+  },
+  {
+   "scene": "carport",
+   "start": 35.607,
+   "end": 37.023
+  },
+  {
+   "scene": "carport",
+   "start": 37.403,
+   "end": 42.535
+  },
+  {
+   "scene": "garden",
+   "start": 43.535,
+   "end": 45.101
+  },
+  {
+   "scene": "garden",
+   "start": 45.481,
+   "end": 47.431
+  },
+  {
+   "scene": "garden",
+   "start": 47.811,
+   "end": 50.727
+  },
+  {
+   "scene": "garden",
+   "start": 51.107,
+   "end": 53.127
+  },
+  {
+   "scene": "garden",
+   "start": 53.507,
+   "end": 56.524
+  },
+  {
+   "scene": "water",
+   "start": 57.524,
+   "end": 59.109
+  },
+  {
+   "scene": "water",
+   "start": 59.489,
+   "end": 61.99
+  },
+  {
+   "scene": "water",
+   "start": 62.37,
+   "end": 66.866
+  },
+  {
+   "scene": "water",
+   "start": 67.246,
+   "end": 69.127
+  },
+  {
+   "scene": "water",
+   "start": 69.507,
+   "end": 73.183
+  },
+  {
+   "scene": "parking",
+   "start": 74.183,
+   "end": 76.23
+  },
+  {
+   "scene": "parking",
+   "start": 76.61,
+   "end": 81.103
+  },
+  {
+   "scene": "parking",
+   "start": 81.483,
+   "end": 85.6
+  },
+  {
+   "scene": "parking",
+   "start": 85.98,
+   "end": 90.4
+  },
+  {
+   "scene": "updates",
+   "start": 91.4,
+   "end": 94.931
+  },
+  {
+   "scene": "updates",
+   "start": 95.311,
+   "end": 98.634
+  },
+  {
+   "scene": "updates",
+   "start": 99.014,
+   "end": 105.132
+  },
+  {
+   "scene": "updates",
+   "start": 105.512,
+   "end": 108.698
+  },
+  {
+   "scene": "updates",
+   "start": 109.078,
+   "end": 110.62
+  },
+  {
+   "scene": "wadi",
+   "start": 111.62,
+   "end": 113.66
+  },
+  {
+   "scene": "wadi",
+   "start": 114.04,
+   "end": 115.563
+  },
+  {
+   "scene": "wadi",
+   "start": 115.943,
+   "end": 117.424
+  },
+  {
+   "scene": "wadi",
+   "start": 117.804,
+   "end": 121.621
+  },
+  {
+   "scene": "wadi",
+   "start": 122.001,
+   "end": 126.75
+  },
+  {
+   "scene": "bag",
+   "start": 127.75,
+   "end": 129.938
+  },
+  {
+   "scene": "bag",
+   "start": 130.318,
+   "end": 131.748
+  },
+  {
+   "scene": "bag",
+   "start": 131.928,
+   "end": 133.367
+  },
+  {
+   "scene": "bag",
+   "start": 133.547,
+   "end": 136.057
+  },
+  {
+   "scene": "bag",
+   "start": 136.237,
+   "end": 139.586
+  },
+  {
+   "scene": "bag",
+   "start": 139.966,
+   "end": 142.388
+  },
+  {
+   "scene": "outro",
+   "start": 143.388,
+   "end": 145.737
+  },
+  {
+   "scene": "outro",
+   "start": 146.117,
+   "end": 148.54
+  },
+  {
+   "scene": "outro",
+   "start": 148.92,
+   "end": 152.813
+  }
+ ]
+}

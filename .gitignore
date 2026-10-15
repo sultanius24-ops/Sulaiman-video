@@ -6,3 +6,5 @@ audio-pipeline/*.wav
 audio-pipeline/*.json
 audio-pipeline/arabic/models/
 audio-pipeline/arabic/build/
+audio-pipeline/nino/build/
+audio-pipeline/nino/__pycache__/
