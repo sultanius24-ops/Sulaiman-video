@@ -1,7 +1,7 @@
-import {cancelRender, continueRender, delayRender} from 'remotion';
+import {continueRender, delayRender} from 'remotion';
 import {FONT_DATA} from './fontData';
 
-// All fonts used by the compositions, loaded from embedded data (no network requests).
+// All fonts used by the compositions, embedded as data (no network requests).
 const FONTS: [family: string, file: string, weight: string][] = [
   ['Jakarta', 'plus-jakarta-sans-latin-600-normal', '600'],
   ['Jakarta', 'plus-jakarta-sans-latin-700-normal', '700'],
@@ -19,13 +19,25 @@ const FONTS: [family: string, file: string, weight: string][] = [
   ['Cairo', 'cairo-latin-800-normal', '800'],
 ];
 
-const handle = delayRender('Loading embedded fonts');
-Promise.all(
-  FONTS.map(([family, file, weight]) =>
-    new FontFace(family, `url(data:font/woff2;base64,${FONT_DATA[file]})`, {weight})
-      .load()
-      .then((face) => document.fonts.add(face)),
-  ),
-)
-  .then(() => continueRender(handle))
-  .catch((err) => cancelRender(err));
+if (typeof document !== 'undefined' && !document.getElementById('embedded-fonts')) {
+  const style = document.createElement('style');
+  style.id = 'embedded-fonts';
+  style.textContent = FONTS.map(
+    ([family, file, weight]) =>
+      `@font-face{font-family:'${family}';font-weight:${weight};font-style:normal;font-display:block;src:url(data:font/woff2;base64,${FONT_DATA[file]}) format('woff2');}`,
+  ).join('\n');
+  document.head.appendChild(style);
+
+  // Wait for the faces to be ready, but never block a render for more than 5 s:
+  // after a tab reload the load promise can stay pending even though the data is already there.
+  const handle = delayRender('Loading embedded fonts', {timeoutInMilliseconds: 60000});
+  let done = false;
+  const finish = () => {
+    if (!done) {
+      done = true;
+      continueRender(handle);
+    }
+  };
+  Promise.all(FONTS.map(([family, , weight]) => document.fonts.load(`${weight} 40px ${family}`))).then(finish, finish);
+  setTimeout(finish, 5000);
+}
