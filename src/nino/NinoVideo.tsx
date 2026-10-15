@@ -1,4 +1,4 @@
-import './fonts';
+import {useEmbeddedFonts} from '../fonts';
 import {AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {sp} from '../anim';
 import {TIMELINES, TimelineProvider, useNino} from './context';
@@ -31,6 +31,7 @@ const Header: React.FC = () => {
 };
 
 const Body: React.FC = () => {
+  useEmbeddedFonts();
   const {tl, rtl} = useNino();
   const frame = useCurrentFrame();
   const total = Math.round(tl.total * 30);

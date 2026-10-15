@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react';
 import {continueRender, delayRender} from 'remotion';
 import {FONT_DATA} from './fontData';
 
@@ -27,17 +28,23 @@ if (typeof document !== 'undefined' && !document.getElementById('embedded-fonts'
       `@font-face{font-family:'${family}';font-weight:${weight};font-style:normal;font-display:block;src:url(data:font/woff2;base64,${FONT_DATA[file]}) format('woff2');}`,
   ).join('\n');
   document.head.appendChild(style);
-
-  // Wait for the faces to be ready, but never block a render for more than 5 s:
-  // after a tab reload the load promise can stay pending even though the data is already there.
-  const handle = delayRender('Loading embedded fonts', {timeoutInMilliseconds: 60000});
-  let done = false;
-  const finish = () => {
-    if (!done) {
-      done = true;
-      continueRender(handle);
-    }
-  };
-  Promise.all(FONTS.map(([family, , weight]) => document.fonts.load(`${weight} 40px ${family}`))).then(finish, finish);
-  setTimeout(finish, 5000);
 }
+
+// Call from a composition's root component. Holding the render only on pages that actually
+// render frames matters: a module-level delayRender() also runs on Remotion's idle
+// composition-listing page, where Chrome throttles it until the render times out.
+export const useEmbeddedFonts = () => {
+  const [handle] = useState(() => delayRender('Loading embedded fonts'));
+  useEffect(() => {
+    let done = false;
+    const finish = () => {
+      if (!done) {
+        done = true;
+        continueRender(handle);
+      }
+    };
+    Promise.all(FONTS.map(([family, , weight]) => document.fonts.load(`${weight} 40px ${family}`))).then(finish, finish);
+    const timer = setTimeout(finish, 5000);
+    return () => clearTimeout(timer);
+  }, [handle]);
+};

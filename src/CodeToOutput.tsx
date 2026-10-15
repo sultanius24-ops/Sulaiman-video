@@ -1,4 +1,4 @@
-import './fonts';
+import {useEmbeddedFonts} from './fonts';
 import {AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {Background} from './components/Background';
 import {Captions} from './components/Captions';
@@ -14,6 +14,7 @@ import {Summary} from './scenes/Summary';
 import {TOTAL_FRAMES} from './timeline';
 
 export const CodeToOutput: React.FC = () => {
+  useEmbeddedFonts();
   const frame = useCurrentFrame();
   const fadeOut = interpolate(frame, [TOTAL_FRAMES - 24, TOTAL_FRAMES - 1], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
