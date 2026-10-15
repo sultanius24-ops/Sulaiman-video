@@ -1,7 +1,8 @@
-import {loadFont} from '@remotion/fonts';
-import {staticFile} from 'remotion';
+import {cancelRender, continueRender, delayRender} from 'remotion';
+import {FONT_DATA} from './fontData';
 
-const files: [family: string, file: string, weight: string][] = [
+// All fonts used by the compositions, loaded from embedded data (no network requests).
+const FONTS: [family: string, file: string, weight: string][] = [
   ['Jakarta', 'plus-jakarta-sans-latin-600-normal', '600'],
   ['Jakarta', 'plus-jakarta-sans-latin-700-normal', '700'],
   ['Jakarta', 'plus-jakarta-sans-latin-800-normal', '800'],
@@ -10,8 +11,21 @@ const files: [family: string, file: string, weight: string][] = [
   ['Inter', 'inter-latin-600-normal', '600'],
   ['JBMono', 'jetbrains-mono-latin-500-normal', '500'],
   ['JBMono', 'jetbrains-mono-latin-700-normal', '700'],
+  ['Cairo', 'cairo-arabic-600-normal', '600'],
+  ['Cairo', 'cairo-arabic-700-normal', '700'],
+  ['Cairo', 'cairo-arabic-800-normal', '800'],
+  ['Cairo', 'cairo-latin-600-normal', '600'],
+  ['Cairo', 'cairo-latin-700-normal', '700'],
+  ['Cairo', 'cairo-latin-800-normal', '800'],
 ];
 
-for (const [family, file, weight] of files) {
-  loadFont({family, url: staticFile(`fonts/${file}.woff2`), weight});
-}
+const handle = delayRender('Loading embedded fonts');
+Promise.all(
+  FONTS.map(([family, file, weight]) =>
+    new FontFace(family, `url(data:font/woff2;base64,${FONT_DATA[file]})`, {weight})
+      .load()
+      .then((face) => document.fonts.add(face)),
+  ),
+)
+  .then(() => continueRender(handle))
+  .catch((err) => cancelRender(err));
